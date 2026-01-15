@@ -2,12 +2,12 @@
 
 module tb_traffic_light_4way;
 
-    reg mclk;
+    reg clk;
     reg rst;
     wire [1:0] r1, r2, r3, r4;
 
     traffic_light_4way dut (
-        .mclk(mclk),
+        .clk(clk),
         .rst(rst),
         .r1(r1),
         .r2(r2),
@@ -15,7 +15,7 @@ module tb_traffic_light_4way;
         .r4(r4)
     );
 
-    always #5 mclk = ~mclk;
+    always #5 clk = ~clk;
 
     initial begin
         mclk = 0;
