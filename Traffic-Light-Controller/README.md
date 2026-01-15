@@ -7,7 +7,7 @@ directions remain RED.
 
 ## Design Approach
 - Finite State Machine (FSM) based control
-- Parameterized green signal timing
+- Parameterized green signal,red signal timing
 - Synchronous reset and clocking
 - Fully synthesizable RTL
 
@@ -17,7 +17,7 @@ directions remain RED.
 
 ## Tools Used
 - Verilog HDL
-- ModelSim / Vivado
+- xilinx vivado
 
 ## Applications
 - Intersection traffic control
